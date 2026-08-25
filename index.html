@@ -345,7 +345,7 @@ function drawStaticFace(locationLabel) {
   // Getij-cijferring 0..23
   ctx.font = `${0.022 * R * 2}px Arial`; ctx.fillStyle = "#333";
   for (let i = 0; i < 24; i++) {
-    const ang = i * 6; //15
+    const ang = i * 15; 
     const [x1, y1] = polar(ang, 0.86);
     const [x2, y2] = polar(ang, i % 2 === 0 ? 0.90 : 0.88);
     ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2);
